@@ -4,30 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffced03fdb50aa9e12d51a7a16a5df3e",
-    "content-hash": "a802f8b17e00fc9f208aaff9255e09c7",
+    "hash": "aada26d1c518856af03f1b3df2b24e75",
+    "content-hash": "57b9a9cda13210906679241030b65f57",
     "packages": [
         {
-            "name": "phpish/http",
+            "name": "sandeepshetty/shopify_api",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpish/http.git",
-                "reference": "bd6f604a2629687ebdcb637715d8ed571e6b3d1a"
+                "url": "https://github.com/sandeepshetty/shopify_api.git",
+                "reference": "20956b20c879f64cacedaf029d40d6d188f97e5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpish/http/zipball/bd6f604a2629687ebdcb637715d8ed571e6b3d1a",
-                "reference": "bd6f604a2629687ebdcb637715d8ed571e6b3d1a",
+                "url": "https://api.github.com/repos/sandeepshetty/shopify_api/zipball/20956b20c879f64cacedaf029d40d6d188f97e5d",
+                "reference": "20956b20c879f64cacedaf029d40d6d188f97e5d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.3.0",
+                "sandeepshetty/wcurl": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "files": [
-                    "http.php"
+                    "../wcurl/wcurl.php",
+                    "client.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -38,72 +40,66 @@
                 {
                     "name": "Sandeep Shetty",
                     "email": "sandeep.shetty@gmail.com",
-                    "homepage": "http://sandeep.shetty.in"
+                    "homepage": "http://sandeep.shetty.in",
+                    "role": "Developer"
                 }
             ],
-            "description": "Convenience wrapper around cURL",
-            "homepage": "https://github.com/phpish/http",
+            "description": "Simple Shopify API client in PHP",
+            "homepage": "https://github.com/sandeepshetty/shopify_api",
+            "keywords": [
+                "api",
+                "shopify"
+            ],
+            "time": "2014-11-23 20:57:34"
+        },
+        {
+            "name": "sandeepshetty/wcurl",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sandeepshetty/wcurl.git",
+                "reference": "69e532773ca9306418101ca6c8edddd6c70d5427"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sandeepshetty/wcurl/zipball/69e532773ca9306418101ca6c8edddd6c70d5427",
+                "reference": "69e532773ca9306418101ca6c8edddd6c70d5427",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sandeep Shetty",
+                    "email": "sandeep.shetty@gmail.com",
+                    "homepage": "http://sandeep.shetty.in",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A convenience wrapper around PHP's cURL library",
+            "homepage": "https://github.com/sandeepshetty/wcurl",
             "keywords": [
                 "api",
                 "curl",
                 "http"
             ],
-            "time": "2014-11-23 23:33:44"
-        },
-        {
-            "name": "phpish/shopify",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpish/shopify.git",
-                "reference": "b98448e90ccc47a2893a95e07a3486dcf46d1726"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpish/shopify/zipball/b98448e90ccc47a2893a95e07a3486dcf46d1726",
-                "reference": "b98448e90ccc47a2893a95e07a3486dcf46d1726",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "phpish/http": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "shopify.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sandeep Shetty",
-                    "email": "sandeep.shetty@gmail.com",
-                    "homepage": "http://sandeep.shetty.in"
-                }
-            ],
-            "description": "Simple Shopify API client in PHP",
-            "homepage": "https://github.com/phpish/shopify",
-            "keywords": [
-                "api",
-                "shopify"
-            ],
-            "time": "2014-12-10 12:52:10"
+            "time": "2013-04-07 01:00:07"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "phpish/shopify": 20
+        "sandeepshetty/shopify_api": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=5.3.0"
-    },
+    "platform": [],
     "platform-dev": []
 }

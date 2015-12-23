@@ -1,7 +1,6 @@
 {
-	"minimum-stability": "dev",
-	"require": {
-		"php": ">=5.3.0",
-		"phpish/shopify": "dev-master"
-	}
+    "minimum-stability": "dev",
+    "require": {
+        "sandeepshetty/shopify_api": "dev-master"
+    }
 }
